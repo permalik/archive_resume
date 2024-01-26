@@ -25,25 +25,48 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
 }
 body {
-    margin: 0;
+    margin: 3rem 0;
 
     font-family: 'Nunito Variable', sans-serif;
-
-    background-color: black;
-    color: white;
 }
 main {
     display: block;
 }
 h1 {
+    margin: 0 0 1rem;
+
     font-size: 2em;
-    margin: 0.67em 0;
+}
+h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+p {
+    margin: 0.5rem 0 0 0;
+
+    font-weight: 300;
 }
 ul {
     margin: 0;
     padding: 0;
 
     list-style: none;
+}
+a {
+    font-family: 'Nunito Variable', sans-serif;
+
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+a:focus {
+    text-decoration-color: blue;
+}
+a:focus-visible {
+    outline-color: blue;
+}
+a:active {
+    color: purple;
 }
 hr {
     box-sizing: content-box; /* 1 */

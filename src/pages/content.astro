@@ -3,7 +3,7 @@ import '@fontsource-variable/lora';
 ---
 
 <div>
-    <header>
+    <header class="main-header">
         <h1>Ty Malik</h1>
         <ul>
             <li>
@@ -27,35 +27,35 @@ import '@fontsource-variable/lora';
         </ul>
     </header>
     <main>
-        <h2>technical</h2>
+        <h2 class="h-two">technical</h2>
         <hr>
         <section>
-            <h3>intermediate</h3>
+            <h3 class="h-three">intermediate</h3>
             <p>Express.js, Git, GraphQL, JavaScript, MongoDB, Node.js, React.js, Redis, SvelteKit, Testing, TypeScript, Vue.js</p>
-            <h3>beginner</h3>
+            <h3 class="h-three">beginner</h3>
             <p>Docker, Go, JSDoc, Laravel, PHP, PostgreSQL, Rust, Vim</p>
-            <h3>novice</h3>
+            <h3 class="h-three">novice</h3>
             <p>Bash, C#, DSA, Linux, Lua, .NET</p>
         </section>
-        <h2>experience</h2>
+        <h2 class="h-two">experience</h2>
         <hr>
         <section>
-            <div>
+            <header class="exp-header">
                 <div>
-                    <h3>wpa intelligence </h3>
-                    <p>Oklahoma City, OK</p>
+                    <h3 class="h-three">wpa intelligence</h3>
+                    <p class="sub-h-three">Oklahoma City, OK</p>
                 </div>
                 <div>
-                    <h3>software engineer </h3>
-                    <p>September 2022 - Present</p>
+                    <h3 class="h-three">software engineer</h3>
+                    <p class="sub-h-three">September 2022 - Present</p>
                 </div>
-            </div>
+            </header>
             <p>
                 Bonfire is a SaaS voter data analytics warehouse, query platform, and high-volume SMS messaging tool (
                 <a href="https://app.bonfiredata.com/login/">app.bonfiredata.com</a>
                 )
             </p>
-            <ul>
+            <ul class="exp-list">
                 <li>
                     Introduce solutions requiring Node.js logic in Express.js server and UI updates in Vue2
                 </li>
@@ -94,9 +94,9 @@ import '@fontsource-variable/lora';
                 </li>
             </ul>
         </section>
-        <h2>projects</h2>
+        <h2 class="h-two">projects</h2>
         <hr>
-        <section>
+        <section class="proj-section">
             <ul>
                 <li>
                     <a href="https://github.com/systemysterio/quodaddy/">Quote Aggregator and Social Application</a>
@@ -112,31 +112,39 @@ import '@fontsource-variable/lora';
                 </li>
             </ul>
         </section>
-        <h2>education</h2>
+        <h2 class="h-two">education</h2>
         <hr>
-        <section>
+        <section class="edu-section">
             <div>
-                <div>
-                    <h3>western governors university</h3>
-                    <p>Remote/Millcreek, UT</p>
-                </div>
-                <div>
-                    <h3>b.s. computer science</h3>
-                    <p>May 25</p>
-                </div>
+                <h3 class="h-three">western governors university</h3>
+                <p class="sub-h-three">Remote | Millcreek, UT</p>
+            </div>
+            <div>
+                <h3 class="h-three">b.s. computer science</h3>
+                <p class="sub-h-three">May 2025</p>
             </div>
         </section>
     </main>
 </div>
 
 <style lang="scss">
-header {
+h2 {
+    font-family: 'Lora Variable', sans-serif;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'Lora Variable', sans-serif;
+    text-transform: uppercase;
+}
+.main-header {
     width: 100%;
 
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+
+    font-family: 'Lora Variable', sans-serif;
 
     ul {
         width: 95%;
@@ -147,12 +155,69 @@ header {
         justify-content: space-between;
     }
 }
-h2 {
-    font-family: 'Lora Variable', sans-serif;
-    text-transform: uppercase;
+.exp-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    & div {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: center;
+
+        & h3 {
+            margin: 0 0.5rem 0 0;
+        }
+    }
 }
-h3 {
-    font-family: 'Lora Variable', sans-serif;
-    text-transform: uppercase;
+.exp-list {
+    list-style: disc;
+    
+    font-weight: 300;
+
+    & li {
+        margin: 0.25rem 0 0 1rem;
+    }
+}
+.proj-section {
+    & ul {
+        & li {
+            margin: 0.25rem 0 0 0;
+        }
+    }
+}
+.edu-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-between;
+
+    & div {
+        display: flex;
+        flex-flow: row;
+        align-items: baseline;
+        
+        & h3 {
+            margin: 0 0.5rem 0 0 ;
+        }
+    }
+}
+.h-two {
+    margin: 0.75rem 0 0 0;
+
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.h-three {
+    margin: 0.75rem 0 0 0;
+
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.sub-h-three {
+    font-style: italic;
+    font-weight: 200;
 }
 </style>
