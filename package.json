@@ -10,6 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/lora": "^5.0.9",
+    "@fontsource-variable/nunito": "^5.0.17",
+    "@fontsource-variable/roboto-serif": "^5.0.9",
+    "@fontsource/merriweather": "^5.0.8",
+    "@fontsource/spectral": "^5.0.8",
     "astro": "^4.2.4"
   },
   "devDependencies": {

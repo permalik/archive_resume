@@ -5,6 +5,21 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource-variable/lora':
+    specifier: ^5.0.9
+    version: 5.0.9
+  '@fontsource-variable/nunito':
+    specifier: ^5.0.17
+    version: 5.0.17
+  '@fontsource-variable/roboto-serif':
+    specifier: ^5.0.9
+    version: 5.0.9
+  '@fontsource/merriweather':
+    specifier: ^5.0.8
+    version: 5.0.8
+  '@fontsource/spectral':
+    specifier: ^5.0.8
+    version: 5.0.8
   astro:
     specifier: ^4.2.4
     version: 4.2.4(sass@1.70.0)
@@ -508,6 +523,26 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/lora@5.0.9:
+    resolution: {integrity: sha512-AeTqrMIay4QXkLeGs0JDgc2RBnR6Hgkj3OLZjkAusauMmz03Z7SAz8FsuT2vfpUpjkrLeU52AFwF21EeBn3+7g==}
+    dev: false
+
+  /@fontsource-variable/nunito@5.0.17:
+    resolution: {integrity: sha512-e9F+nYc8610HtmVB08kKzHdythbSJBN9CyV3ODzCAs2LuoOviAndYdNfKOw6rHqOh3j99gfOSNlHpLNNF9O5OA==}
+    dev: false
+
+  /@fontsource-variable/roboto-serif@5.0.9:
+    resolution: {integrity: sha512-r9dFQHTiqij364oQaU42YPCrtnA1vHtNeh2h71W05JozlKm6mqf2TMwabNkfDC9GPMaxoh4ZqZjjscEyhpiMsQ==}
+    dev: false
+
+  /@fontsource/merriweather@5.0.8:
+    resolution: {integrity: sha512-4vvR6psdKcGzaFCQL8fGCqMI/mOLKD+mhmUe3iQilx/4VFkIcF7wswWHZ7KCPeF24edX8yd0QXX0DQ1CenMrYA==}
+    dev: false
+
+  /@fontsource/spectral@5.0.8:
+    resolution: {integrity: sha512-Gp/tqCe9scBJHwH0RgGasf5KkLYgW4Y2rKgQqMe3j5cYpZyCJA2g0OOVVvF8U7VQfvfw3TW8d3hWT4IISXqQCQ==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
