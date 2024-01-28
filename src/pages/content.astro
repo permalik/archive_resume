@@ -6,24 +6,28 @@ import '@fontsource-variable/lora';
     <header class="main-header">
         <h1>Ty Malik</h1>
         <ul>
-            <li>
-                <a href="tel:+14057160711">(405) 716-0711</a>
-            </li>
-            <li>
-                <a href="mailto:tymalik@pm.me">tymalik@pm.me</a>
-            </li>
-            <li>
-                <a href="https://calendly.com/tymalik/">calendly.com/tymalik</a>
-            </li>
-            <li>
-                <a href="https://tymalik.me/">tymalik.me</a>
-            </li>
-            <li>
-                <a href="https://github.com/permalik/">github.com/permalik</a>
-            </li>
-            <li>
-                <a href="https://linkedin.com/in/permalik/">linkedin.com/in/permalik</a>
-            </li>
+            <div class="links-one">
+                <li>
+                    <a href="tel:+14057160711">(405) 716-0711</a>
+                </li>
+                <li>
+                    <a href="mailto:tymalik@pm.me">tymalik@pm.me</a>
+                </li>
+                <li>
+                    <a href="https://calendly.com/tymalik/">calendly.com/tymalik</a>
+                </li>
+            </div>
+            <div class="links-two">
+                <li>
+                    <a href="https://tymalik.me/">tymalik.me</a>
+                </li>
+                <li>
+                    <a href="https://github.com/permalik/">github.com/permalik</a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/permalik/">linkedin.com/in/permalik</a>
+                </li>
+            </div>
         </ul>
     </header>
     <main>
@@ -57,40 +61,31 @@ import '@fontsource-variable/lora';
             </p>
             <ul class="exp-list">
                 <li>
-                    Introduce solutions requiring Node.js logic in Express.js server and UI updates in Vue2
+                    Write solutions with Node.js in Express.js server and UI updates in Vue2
                 </li>
                 <li>
-                    Build tools allowing users to run impactful queries against SQL Server and MongoDB
+                    Build tools enabling users to run impactful queries against SQL Server and MongoDB
                 </li>
                 <li>
-                    Improve code quality and developer experience by employing dynamic GraphQL input types and refactoring relevant logic
-                </li>
-                <li>
-                    Refactor legacy functional implementations, preferring procedural methods
+                    Refactor GraphQL logic with dynamic input types; refactor functional code to procedural
                 </li>
                 <li>
                     Normalize and maintain large datasets across SQL Server and MongoDB
                 </li>
                 <li>
-                    Verify quality of user experience, REST, and GraphQL endpoints with Cypress and Jest
-                </li>
-                <li>
-                    Support Rust microservice architecture by adding unit and integration tests
+                    Test Rust microservices; test REST and GraphQL endpoints with Cypress and Jest
                 </li>
                 <li>
                     Create CI pipeline with GitHub Actions, integrating with test suites and pre-commit hooks
                 </li>
                 <li>
-                    Build internal tooling with Slackbot, Geekbot, GitHub REST API, and the Tauri/Rust framework
+                    Develop CLI and desktop tools leveraging third-party REST APIs
                 </li>
                 <li>
-                    Write user-facing and internal documentation, instructing how to use products and code itself
+                    Introduce user-facing and internal documentation for deliverables and codebase
                 </li>
                 <li>
-                    Organize development workflow by identifying gaps in SDLC and establishing a project management system
-                </li>
-                <li>
-                    Onboard and provide support for new developers as they acclimate to the codebase
+                    Organize development workflow; identify gaps in SDLC; establish project management system
                 </li>
             </ul>
         </section>
@@ -147,12 +142,16 @@ h3 {
     font-family: 'Lora Variable', sans-serif;
 
     ul {
-        width: 95%;
+        width: 100%;
 
         display: flex; 
         flex-flow: row wrap;
         align-content: center;
         justify-content: space-between;
+
+        & .links-two {
+            text-align: end;
+        }
     }
 }
 .exp-header {
@@ -205,7 +204,7 @@ h3 {
     }
 }
 .h-two {
-    margin: 1.5rem 0 0 0;
+    margin: 0.75rem 0 0 0;
 
     font-size: 1.125rem;
     font-weight: 400;
