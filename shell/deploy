@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "check for deploy_history"
+archive_resume="$HOME/git/archive_resume"
+
+if [ -d "$archive_resume/deploy_history" ]; then
+    echo "deploy_history online"
+else
+    echo "creating deploy_history"
+    mkdir -p "$archive_resume/deploy_history"
+fi
+
+echo "create backup"
+assets="/var/www/archive_resume"
+today_raw=$(date +%Y%m%d)
+today=$(echo "$today_raw" | tail -c 7)
+sudo mv $assets/html $assets/html_$today
+sudo mv $assets/html_$today "$archive_resume/deploy_history"
+
+echo "reset assets"
+sudo mkdir -p "$assets/html"
+
+echo "building"
+pnpm i
+pnpm build $archive_resume
+
+echo "deploy server"
+sudo systemctl restart nginx
