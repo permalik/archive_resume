@@ -2,14 +2,7 @@
 import '@fontsource-variable/nunito';
 import Content from './content.astro';
 
-/*
-*
-* TODO: Export As:
-* Tokenize the resume, convert to pdf/etc, and export to user
-* TODO: Update everything and ship
-*
-*/
-
+// TODO: Parse resume convert to pdf/etc and export
 ---
 
 <html lang="en">
@@ -17,6 +10,10 @@ import Content from './content.astro';
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>"
+        />
         <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
     </head>
@@ -35,7 +32,6 @@ html {
 }
 body {
     margin: 3rem 0;
-
     font-family: 'Nunito Variable', sans-serif;
 }
 main {
@@ -43,7 +39,6 @@ main {
 }
 h1 {
     margin: 0 0 1rem;
-
     font-size: 2em;
 }
 h2, h3, h4, h5, h6 {
@@ -51,18 +46,15 @@ h2, h3, h4, h5, h6 {
 }
 p {
     margin: 0.5rem 0 0 0;
-
     font-weight: 300;
 }
 ul {
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 a {
     font-family: 'Nunito Variable', sans-serif;
-
     color: black;
 }
 a:hover {
