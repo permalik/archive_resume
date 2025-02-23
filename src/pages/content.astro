@@ -78,7 +78,7 @@ import '@fontsource-variable/lora';
                     Reduced internal team workload by identifying web application failures and optimizing logic and database queries in Visual Basic.
                 </li>
                 <li>
-                    Accelerated bug report resolution by automating tasks and developing internal tooling in Python, .NET, and Go.
+                    Accelerated bug report resolution by automating tasks and developing internal tooling in Go, Python, and .NET.
                 </li>
             </ul>
         </section>
@@ -171,12 +171,22 @@ h3 {
         width: 100%;
 
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         align-content: center;
         justify-content: space-between;
 
         & .links-two {
             text-align: end;
+        }
+
+        @media (width <= 500px) {
+            flex-flow: column;
+            align-content: center;
+            justify-content: center;
+
+            & .links-one, .links-two {
+                text-align: center;
+            }
         }
     }
 }
@@ -195,6 +205,12 @@ h3 {
         & h3 {
             margin: 0 0.5rem 0 0;
         }
+    }
+
+    @media (width <= 500px) {
+        flex-flow: column;
+        align-items: center;
+        align-items: center;
     }
 }
 .exp-list {
