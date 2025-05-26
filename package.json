@@ -16,7 +16,7 @@
     "@fontsource-variable/roboto-serif": "^5.2.5",
     "@fontsource/merriweather": "^5.2.7",
     "@fontsource/spectral": "^5.2.5",
-    "astro": "^4.16.18"
+    "astro": "^5.8.0"
   },
   "devDependencies": {
     "sass": "^1.89.0"
