@@ -22,3 +22,6 @@ pnpm-debug.log*
 # jetbrains
 .idea
 *.iml
+
+# Local Netlify folder
+.netlify
